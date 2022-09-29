@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "41ef464e-45f0-4a47-8ec7-5b42ea4fa731",
+		"name": "Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "775027"
+	},
+	"item": [
+		{
+			"name": "Get All Movies List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzQ5MmY3MTlkZDNhOGQyNDcwMDg5YSIsImlhdCI6MTY2NDM5MDQ0NywiZXhwIjoxNjY0Mzk0MDQ3fQ.N31Zrt3hqHnKaw7-3ZRnN3gdb6-keM2Dfg_LzHqNz80",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzQ5MmY3MTlkZDNhOGQyNDcwMDg5YSIsImlhdCI6MTY2NDM5MDQ0NywiZXhwIjoxNjY0Mzk0MDQ3fQ.N31Zrt3hqHnKaw7-3ZRnN3gdb6-keM2Dfg_LzHqNz80",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Yaar Amulle 2",
+							"type": "text"
+						},
+						{
+							"key": "released_on",
+							"value": "2021-03-20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie By ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzQ5MmY3MTlkZDNhOGQyNDcwMDg5YSIsImlhdCI6MTY2NDM5MDQ0NywiZXhwIjoxNjY0Mzk0MDQ3fQ.N31Zrt3hqHnKaw7-3ZRnN3gdb6-keM2Dfg_LzHqNz80",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/movies/63349666592e66f55c27eedd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"63349666592e66f55c27eedd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Movie By ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzQ5MmY3MTlkZDNhOGQyNDcwMDg5YSIsImlhdCI6MTY2NDM5MDQ0NywiZXhwIjoxNjY0Mzk0MDQ3fQ.N31Zrt3hqHnKaw7-3ZRnN3gdb6-keM2Dfg_LzHqNz80",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Iger 2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/movies/63349b12592e66f55c27eeed",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"63349b12592e66f55c27eeed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movie By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzQ5MmY3MTlkZDNhOGQyNDcwMDg5YSIsImlhdCI6MTY2NDM5MDQ0NywiZXhwIjoxNjY0Mzk0MDQ3fQ.N31Zrt3hqHnKaw7-3ZRnN3gdb6-keM2Dfg_LzHqNz80",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/movies/63349666592e66f55c27eedd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"63349666592e66f55c27eedd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
